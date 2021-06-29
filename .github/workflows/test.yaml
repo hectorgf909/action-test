@@ -15,12 +15,9 @@ jobs:
         uses: actions/checkout@main
 
       - name: SonarQube Scan
-        working-directory: ./${{ github.event.inputs.path }}
         uses: hectorgf909/sonarqube-action@main
         with:
           host: "test"
           login: "test"
           projectBaseDir: "./api"
           projectKey: "gsc:gsc:sdablkaml:aml-backend"
-        
-        
