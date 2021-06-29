@@ -4,7 +4,7 @@ name: Build and push image
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
 
 jobs:
   testing: 
@@ -12,10 +12,10 @@ jobs:
     steps:
   
       - name: Checkout code
-        uses: actions/checkout@master
+        uses: actions/checkout@main
 
       - name: SonarQube Scan
-        uses: hectorgf909/sonarqube-action@v1.1.0
+        uses: hectorgf909/sonarqube-action@main
         with:
           host: "test"
           login: "test"
