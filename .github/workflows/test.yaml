@@ -1,0 +1,23 @@
+
+name: Build and push image
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  testing: 
+    runs-on: sdid1weugvml001
+    steps:
+  
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: SonarQube Scan
+        uses: hectorgf909/sonarqube-action@v1.1.0
+        with:
+          host: "test"
+          login: "test"
+          projectBaseDir: "./api"
+          projectKey: "gsc:gsc:sdablkaml:aml-backend"
