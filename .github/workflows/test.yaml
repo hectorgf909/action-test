@@ -2,7 +2,7 @@
 name: Build and push image
 
 on:
-  workflow_dispatch:
+  push:
     branches:
       - 'main'
 
@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: SonarQube Scan
-        uses: hectorgf909/sonarqube-action@main
+        uses: hectorgf909/sonarqube-action-1@main
         # with:
         #   host: "test"
         #   login: "test"
