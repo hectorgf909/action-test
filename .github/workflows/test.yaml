@@ -16,8 +16,8 @@ jobs:
 
       - name: SonarQube Scan
         uses: hectorgf909/sonarqube-action-1@master
-        # with:
-        #   host: "test"
-        #   login: "test"
-        #   projectBaseDir: "./api"
-        #   projectKey: "gsc:gsc:sdablkaml:aml-backend"
+        with:
+          host: "http://sonarqube.isban.gs.corp/"
+          login: "37c776a76dfad27a6324e782a73fb90ce1a734eb"
+          projectBaseDir: "./api"
+          projectKey: "gsc:gsc:sdablkaml:aml-backend"
