@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: SonarQube Scan
-        uses: hectorgf909/sonarqube-action-1@main
+        uses: hectorgf909/sonarqube-action-1@master
         # with:
         #   host: "test"
         #   login: "test"
