@@ -8,7 +8,7 @@ on:
 
 jobs:
   testing: 
-    runs-on: ubuntu-latest
+    runs-on: sdid1weugvml001
     steps:
   
       - name: Checkout code
